@@ -7,3 +7,44 @@
     height: 100vh;
     width: 100vw;
 }
+
+@media screen and (max-width: 950px) {
+    
+    
+.burger{
+    display: flex !important;
+}
+.navbar_navigation{
+    display: none !important;
+
+}
+.mobile_navbar_navigation{
+    display: flex !important;
+        flex-direction: column;
+    float: right;
+    justify-content: space-between;
+    width: fit-content;
+    height: 25vh;
+    align-items: center;
+}
+}
+    
+.burger {
+    display: none;
+}
+
+.navbar_navigation{
+    display: block;
+}
+
+.mobile_navbar_navigation{
+    display: none;
+}
+
+.visible{
+    display: flex !important;
+}
+
+.hidden{
+    display: none !important;
+}
