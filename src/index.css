@@ -23,8 +23,8 @@
         flex-direction: column;
     float: right;
     justify-content: space-between;
-    width: fit-content;
-    height: 25vh;
+    width: 40vw;
+    height: 50vh;
     align-items: center;
 }
 }
@@ -34,7 +34,7 @@
 }
 
 .navbar_navigation{
-    display: block;
+    display: flex;
 }
 
 .mobile_navbar_navigation{

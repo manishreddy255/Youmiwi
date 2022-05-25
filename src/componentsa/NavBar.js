@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import { Burger, Drawer} from '@mantine/core';
-import youmewi from "../images/youmewi.svg"
+import { Burger, Drawer } from '@mantine/core';
+import youmewi from "../images/youmewi.png"
 import NavElements from "./NavElements";
 
 
@@ -11,38 +11,38 @@ export default function NavBar() {
   const burger = opened ? 'visible' : 'hidden';
 
 
-    return (
-      <>
+  return (
+    <>
       <div className=" 
-      flex h-[7vh]
-      pr-[2vw] pl-[2vw]
+      flex h-[12vh]
+      pr-[4vw] pl-[4vw]
        items-center justify-between ">
-         <Link to={"/"}>
-        <div className=" 
-        w-[40vw] h-[100%] flex justify-start items-center  ">
+        <Link to={"/"}>
+          <div className=" 
+        w-[20vw] h-[fit-content] flex justify-start items-center  ">
 
-       <img className="h-[5vh] " src={youmewi} alt="youmewi"/>
-        </div>
-         </Link>
-         <NavElements computerNavigation="navbar_navigation"/>
+            <img src={youmewi} className="w-[100%]" alt="youmewi" />
+          </div>
+        </Link>
+        <NavElements computerNavigation={"navbar_navigation"} />
 
 
-        
+
         <Burger
-        className="burger"
-      opened={opened}
-      onClick={() => 
-        setOpened((o) => !o)
+          className="burger"
+          opened={opened}
+          onClick={() =>
+            setOpened((o) => !o)
 
-      }
-      title={title}
-    />
+          }
+          title={title}
+        />
 
-        
+
       </div>
-    
 
-    <Drawer
+
+      <Drawer
         opened={opened}
         onClose={() => setOpened(false)}
         padding="xl"
@@ -50,9 +50,9 @@ export default function NavBar() {
         position="right"
         className=" w-[fit-content] "
       >
-        <NavElements computerNavigation={`mobile_navbar_navigation ${burger} `}/>
+        <NavElements computerNavigation={`mobile_navbar_navigation ${burger} `} />
       </Drawer>
 
-      </>
-    )
+    </>
+  )
 }
