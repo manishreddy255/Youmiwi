@@ -19,9 +19,9 @@ export default function NavBar() {
        items-center justify-between ">
         <Link to={"/"}>
           <div className=" 
-        w-[20vw] h-[fit-content] flex justify-start items-center  ">
+        w-[30vw] h-[fit-content] flex justify-start items-center  ">
 
-            <img src={youmewi} className="w-[100%]" alt="youmewi" />
+            <img src={youmewi} className="w-[70%]" alt="youmewi" />
           </div>
         </Link>
         <NavElements computerNavigation={"navbar_navigation"} />
