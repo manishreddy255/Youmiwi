@@ -1,4 +1,4 @@
-import { Card, Image, Group, Text, Avatar, Anchor, Container } from "@mantine/core"
+import { Card, Group, Text, Avatar, Anchor } from "@mantine/core"
 
 import facebookLg from "../images/facbookLg.png"
 import instagramLg from "../images/instaLg.png"
