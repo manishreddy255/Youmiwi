@@ -1,6 +1,6 @@
 import { TextInput, Group, Button, Chips, Chip, Text , InputWrapper} from "@mantine/core";
 import { At, PhoneCall, Location } from 'tabler-icons-react';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 const RegisterFrom = () => {
 
     const [fullName, setFullName] = useState('');
@@ -11,6 +11,7 @@ const RegisterFrom = () => {
     const [city, setCity] = useState('');
     const [state, setState] = useState('');
     const [ageGroup, setAgeGroup] = useState('');
+    const [errors, setErrors] = useState(true)
 
     const mailValidate = (val) => {
         console.log(val)
@@ -46,12 +47,23 @@ const RegisterFrom = () => {
         )
     }
 
+    useEffect(() => {
+        if(fullName !== "" && mailError ==="" && phoneError === "" && phone !== "" && city !== "" && state !== "" && ageGroup !== ""){
+
+            setErrors(false)
+        } else {
+            setErrors(true)
+        }
+    }, [fullName, mailError, phoneError, phone, city, state, ageGroup])
+    
+    
+
     return (
         <>
             <div className="pl-[5vw] pr-[5vw]  pb-[5vw]">
 
                 <Text>Register</Text>
-                <Text>Get access to our WhatsApp community by regestring</Text>
+                <Text>Get access to our WhatsApp community by registring</Text>
                 <form onSubmit={submitData} className="w-[100%] md:w-[70%] m-auto " >
                     <TextInput
                         placeholder="Your name"
@@ -129,7 +141,7 @@ const RegisterFrom = () => {
                         </Chips>
                     </InputWrapper>
 
-                    <Button className=" bg-[#228be6] mt-[2vh]" >
+                    <Button disabled={errors} className=" bg-[#228be6] mt-[2vh]" >
                         Register
                     </Button>
                 </form>

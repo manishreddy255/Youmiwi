@@ -8,7 +8,7 @@ const Home = () => {
             <div className="grid  grid-cols-1 text-[0.9em] gap-5 md:grid-cols-2 md:text-[1em] pl-[5vw] pr-[10vw] pt-[5vw]  pb-[5vw] " >
                 <div className=" flex flex-col items-center justify-center ">
 
-                    <Title order={3} style={{ fontSize: "2.4em" }}>You Me Wi </Title>
+                    <Title order={3} style={{ fontSize: "2.4em" }}>YouMeWi </Title>
                     <Text style={{ fontSize: "1.5em" }} size="lg">Youth Meditation Wing</Text>
                 </div>
                 <Text style={{ fontSize: "1.4em" }} size="sm" className="text-center md:text-left">
