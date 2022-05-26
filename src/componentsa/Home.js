@@ -27,18 +27,28 @@ const Home = () => {
             <div className="grid  grid-cols-1 text-[0.9em] gap-[4vh]  pl-[5vw] pr-[10vw] pt-[5vw]  pb-[5vw] " >
                 <Title className=" text-center md:text-left " order={1} style={{ fontSize: "2em" }}>Parent Organization </Title>
                 <div className=" flex flex-col md:flex-row justify-center items-center ">
-                    <div style={{ width: 240, marginLeft: 'auto', marginRight: 'auto' }} className=" pb-[4vh] " >
+                    <div
+                    
+                     style={{ width: 240, marginLeft: 'auto', marginRight: 'auto' }} className=" pb-[4vh] " >
                         <Image
                             radius="md"
                             src={parent1}
                             alt="Random unsplash image"
+                            component="a"
+          href='https://www.pssmovement.org/about-pssm/'
+          target="_blank"
                         />
                     </div>
-                    <div style={{ width: 240, marginLeft: 'auto', marginRight: 'auto' }} className="flex justify-center items-center pb-[4vh">
+                    <div 
+                    
+                    style={{ width: 240, marginLeft: 'auto', marginRight: 'auto' }} className="flex justify-center items-center pb-[4vh">
                         <Image
                             radius="md"
                             src={parent2}
                             alt="Random unsplash image"
+                            component="a"
+          href='https://spiritualtablets.com/'
+          target="_blank"
                         />
                     </div>
                 </div>
