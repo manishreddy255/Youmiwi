@@ -17,7 +17,7 @@ import groupSession33 from "../gallery/groupSession-3-3.jpeg"
 import groupSession34 from "../gallery/groupSession-3-4.jpeg"
 import ReactPlayer from "react-player"
 import video from "../videos/video-1.mp4"
-import { Text, Divider } from "@mantine/core"
+import { Text } from "@mantine/core"
 
 const GalleryYOU = () => {
 
