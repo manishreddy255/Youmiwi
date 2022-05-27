@@ -38,7 +38,7 @@ const GalleryYOU = () => {
             <div className="pl-[10vw] mt-[5vh] mb-[5vh]">
                 <Text className="text-[1.5em] text-slate-600 text-left" weight={500}>Videos</Text>
             </div>
-            <ReactPlayer url={video} controls={true} className=" w-[80% !important ] md:w-[80%] m-auto h-auto pr-[4vw] pl-[4vw] mb-[5vh] " width={"80%"} height={"auto"} />
+            <ReactPlayer url={video} controls={true} className=" w-[80% ] md:w-[80%] m-auto h-auto pr-[4vw] pl-[4vw] mb-[5vh] " width={"80%"} height={"auto"} />
         </>
     )
 }

@@ -24,7 +24,7 @@ const Footer = () => {
                     All rights reserved © 2022
                 </div>
                 <div className="flex justify-center items-center ">
-                    <h1> website maintanance by </h1>
+                    <h1> website maintenance by </h1>
                     <Anchor href="https://www.linkedin.com/in/aremanishreddy/" target="_blank">
                         <Avatar src={null} alt="Are Manish Reddy" color="red">MR</Avatar>
                     </Anchor>

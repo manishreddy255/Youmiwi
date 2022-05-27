@@ -63,7 +63,7 @@ const RegisterFrom = () => {
             <div className="pl-[5vw] pr-[5vw]  pb-[5vw]">
 
                 <Text>Register</Text>
-                <Text>Get access to our WhatsApp community by registring</Text>
+                <Text>Register yourself in our whatsapp community</Text>
                 <form onSubmit={submitData} className="w-[100%] md:w-[70%] m-auto " >
                     <TextInput
                         placeholder="Your name"
