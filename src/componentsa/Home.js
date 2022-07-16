@@ -5,26 +5,6 @@ import { CurrentLocation } from "tabler-icons-react";
 const Home = () => {
   return (
     <>
-      <div className=" bg-[#937DC2] text-white pb-4 pt-4 flex flex-row items-center justify-center " style={{ fontSize: "1.4em" }}>
-        {/* <iframe title="nas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.343493668757!2d78.53264721487571!3d17.34719678810268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x276156ed5e75b84d!2zMTfCsDIwJzQ5LjkiTiA3OMKwMzInMDUuNCJF!5e0!3m2!1sen!2sin!4v1656935715557!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                   <a target={"_blank"} rel="noreferrer" href="https://goo.gl/maps/5mx3mKfKz1om9iJu7">click on this</a> */}
-        <div>
-        🔊 Hello everyone! 👋🏽🔊
-        <br></br>
-        Hope you all are doing well.💙
-        <br></br>
-        We are happy to announce that we are organising our second offline meet
-        on 10th July 2022 in Hyderabad.
-        </div>
-        <div>
-        <a href="https://goo.gl/maps/3SzVPtH2g71V4kXA6" target={"_blank"} rel="noreferrer" >
-        <Button style={{ fontSize: "0.7em" }} className="bg-[#F94C66] hover:bg-cyan-600  ml-[20px] ">
-        <CurrentLocation className="mr-4"/> Location 
-        </Button>
-      </a>
-        </div>
-        
-      </div>
       <div className="grid  grid-cols-1 text-[0.9em] gap-5 md:grid-cols-2 md:text-[1em] pl-[5vw] pr-[10vw] pt-[5vw]  pb-[5vw] ">
         <div className=" flex flex-col items-center justify-center ">
           <Title order={3} style={{ fontSize: "2.4em" }}>
