@@ -1,7 +1,6 @@
-import { Title, Text, Image, Button } from "@mantine/core";
+import { Title, Text, Image } from "@mantine/core";
 import parent1 from "../images/parent1.png";
 import parent2 from "../images/parent-2.png";
-import { CurrentLocation } from "tabler-icons-react";
 const Home = () => {
   return (
     <>
